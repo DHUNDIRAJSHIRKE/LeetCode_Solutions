@@ -1,5 +1,10 @@
 package CountTheDigitsThatDivideANumber2520;
+/*
 
+Given an integer num, return the number of digits in num that divide num.
+An integer val divides nums if nums % val == 0.
+
+*/
 public class CountTheDigitsThatDivideANumber2520 {
 	public int countDigits(int num) {
 
