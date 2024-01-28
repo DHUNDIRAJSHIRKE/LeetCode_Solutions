@@ -1,0 +1,37 @@
+package q_1662_CheckIfTwoStringArraysAreEquivalent;
+
+/*
+ * Given two string arrays word1 and word2, return true if the two arrays represent the same string, and false otherwise.
+
+A string is represented by an array if the array elements concatenated in order forms the string.
+*/
+
+
+/*
+ * Constraints:
+
+1 <= word1.length, word2.length <= 103
+1 <= word1[i].length, word2[i].length <= 103
+1 <= sum(word1[i].length), sum(word2[i].length) <= 103
+word1[i] and word2[i] consist of lowercase letters.
+*/
+
+
+
+class Solution {
+    public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+        String w1="";
+        String w2="";
+        for(String s : word1){
+            w1 +=s;
+        }
+        for(String s : word2){
+            w2 +=s;
+        }
+        if(w1.equals(w2)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
